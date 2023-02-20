@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;Display/oled_font2.h&apos; to &apos;oled_font.h&apos;" description="Rename resource &apos;oled_font2.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="oled_font2.h" name="oled_font.h" stamp="1660935986836" updateReferences="true"/>
-</session>

@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;SmartStartUp/stc3x_i2c_example_usage.c&apos; to &apos;smartstart.c&apos;" description="Rename resource &apos;stc3x_i2c_example_usage.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="stc3x_i2c_example_usage.c" name="smartstart.c" stamp="1658164856801" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;SmartStartUp/smartstart.c&apos; to &apos;SmartStartUp_main.c&apos;" description="Rename resource &apos;smartstart.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="smartstart.c" name="SmartStartUp_main.c" stamp="1658165048468" updateReferences="true"/>
-</session>

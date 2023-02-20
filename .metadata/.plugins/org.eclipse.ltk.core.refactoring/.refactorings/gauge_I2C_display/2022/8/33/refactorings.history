@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;gauge_I2C_display/gauge_main.c&apos; to &apos;gauge_lcd_main.c&apos;" description="Rename resource &apos;gauge_main.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="gauge_main.c" name="gauge_lcd_main.c" stamp="1660934968961" updateReferences="true"/>
-</session>

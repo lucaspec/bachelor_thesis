@@ -1,1 +1,0 @@
-"./bme280_main.obj" "../lnk_msp430fr2433.cmd" -llibc.a -llibmath.a 

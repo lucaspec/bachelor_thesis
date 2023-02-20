@@ -1,1 +1,0 @@
-"./sensirion_common.obj" "./sensirion_i2c.obj" "./sensirion_i2c_hal.obj" "./stc3x_i2c.obj" "./stc3x_i2c_example_usage.obj" "../lnk_msp430fr2433.cmd" -llibmath.a -llibc.a 
