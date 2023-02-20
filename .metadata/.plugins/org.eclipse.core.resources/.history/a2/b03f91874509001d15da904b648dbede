@@ -1,0 +1,21 @@
+#include <msp430.h>
+
+int main(void)
+{
+    WDTCTL = WDTPW | WDTHOLD;   // Stop watchdog timer
+
+    // Port Configuration all un-used pins to output low
+    P1OUT = 0x00;
+    P2OUT = 0x00;
+    P3OUT = 0x00;
+    P1DIR = 0xff;
+    P2DIR = 0xff;
+    P3DIR = 0xff;
+
+    // Disable the GPIO power-on default high-impedance mode
+    // to activate previously configured port settings
+    PM5CTL0 &= ~LOCKLPM5;
+
+    LPM3;     // Enter LPM3
+}
+

@@ -1,0 +1,28 @@
+
+**** Build of configuration Debug for project bme280 ****
+
+"C:\\ti\\ccs1120\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../bme280_main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1120/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="C:/ti/ccs1120/ccs/ccs_base/msp430/include" --include_path="C:/Users/lucas/OneDrive/Desktop/ETH/6. Semester/Bachelorarbeit/embedded code/bme280" --include_path="C:/ti/ccs1120/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="bme280_main.d_raw"  "../bme280_main.c"
+"../bme280_main.c", line 210: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../bme280_main.c", line 316: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../bme280_main.c", line 319: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../bme280_main.c", line 492: warning #112-D: statement is unreachable
+"../bme280_main.c", line 361: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../bme280_main.c", line 456: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../bme280_main.c", line 487: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../bme280_main.c", line 565: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+Finished building: "../bme280_main.c"
+ 
+Building target: "bme280.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1120/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"bme280.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1120/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1120/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1120/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1120/ccs/ccs_base/msp430/lib/FR2xx" -i"C:/ti/ccs1120/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="bme280_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "bme280.out" "./bme280_main.obj" "../lnk_msp430fr2433.cmd"  -llibc.a -llibmath.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "bme280.out"
+ 
+
+**** Build Finished ****

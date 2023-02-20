@@ -1,0 +1,66 @@
+
+**** Build of configuration Debug for project AdaptiveSampling ****
+
+"C:\\ti\\ccs1120\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../AdaptiveSampling_main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1120/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --include_path="C:/ti/ccs1120/ccs/ccs_base/msp430/include" --include_path="C:/Users/lucas/OneDrive/Desktop/ETH/6. Semester/Bachelorarbeit/embedded code/AdaptiveSampling" --include_path="C:/ti/ccs1120/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="AdaptiveSampling_main.d_raw"  "../AdaptiveSampling_main.c"
+"C:/ti/ccs1120/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include/stdbool.h", line 48: warning #48-D: incompatible redefinition of macro "bool" (declared at line 79 of "..\sensirion_config.h")
+"../AdaptiveSampling_main.c", line 150: remark #1528-D: (ULP 3.1) Detected flag polling using UCA1IFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../AdaptiveSampling_main.c", line 205: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../AdaptiveSampling_main.c", line 231: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../AdaptiveSampling_main.c", line 271: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../AdaptiveSampling_main.c", line 297: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../AdaptiveSampling_main.c", line 370: remark #1535-D: (ULP 8.1) variable "NVM_READ_CMD_SIZE" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../AdaptiveSampling_main.c", line 385: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../AdaptiveSampling_main.c", line 387: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../AdaptiveSampling_main.c", line 409: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../AdaptiveSampling_main.c", line 416: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../AdaptiveSampling_main.c", line 422: remark #1542-D: (ULP 12.1) Detected memcpy() and recommend using DMA instead if greater than 100 words being transferred
+"../AdaptiveSampling_main.c", line 424: remark #2553-D: (ULP 14.1) Array index (involving "bytes_per_line") of type "int". Recommend using "unsigned int"
+"../AdaptiveSampling_main.c", line 394: remark #1535-D: (ULP 8.1) variable "bytes_per_line" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../AdaptiveSampling_main.c", line 416: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../AdaptiveSampling_main.c", line 422: remark #1542-D: (ULP 12.1) Detected memcpy() and recommend using DMA instead if greater than 100 words being transferred
+"../AdaptiveSampling_main.c", line 424: remark #2553-D: (ULP 14.1) Array index (involving "bytes_per_line") of type "int". Recommend using "unsigned int"
+"../AdaptiveSampling_main.c", line 454: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AdaptiveSampling_main.c", line 466: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../AdaptiveSampling_main.c", line 467: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../AdaptiveSampling_main.c", line 504: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AdaptiveSampling_main.c", line 506: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../AdaptiveSampling_main.c", line 512: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../AdaptiveSampling_main.c", line 539: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../AdaptiveSampling_main.c", line 541: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AdaptiveSampling_main.c", line 562: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AdaptiveSampling_main.c", line 718: warning #169-D: argument of type "uint8_t (*)[16]" is incompatible with parameter of type "uint8_t *"
+"../AdaptiveSampling_main.c", line 815: warning #169-D: argument of type "uint8_t (*)[16]" is incompatible with parameter of type "uint8_t *"
+"../AdaptiveSampling_main.c", line 630: warning #548-D: transfer of control bypasses initialization of:
+            variable "SoC_bar" (declared at line 684)
+            variable "SoC_percentage" (declared at line 685)
+"../AdaptiveSampling_main.c", line 627: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../AdaptiveSampling_main.c", line 639: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AdaptiveSampling_main.c", line 684: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AdaptiveSampling_main.c", line 736: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AdaptiveSampling_main.c", line 781: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AdaptiveSampling_main.c", line 619: remark #1535-D: (ULP 8.1) variable "relative_humidity_ticks" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../AdaptiveSampling_main.c", line 623: remark #1535-D: (ULP 8.1) variable "absolute_pressure" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../AdaptiveSampling_main.c", line 900: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../AdaptiveSampling_main.c", line 957: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../AdaptiveSampling_main.c", line 958: remark #1538-D: (ULP 10.1) ISR USCI_A1_ISR calls function SendUCA1Data. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"../AdaptiveSampling_main.c", line 966: remark #1538-D: (ULP 10.1) ISR USCI_A1_ISR calls function SendUCA1Data. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"../AdaptiveSampling_main.c", line 975: remark #1538-D: (ULP 10.1) ISR USCI_A1_ISR calls function SendUCA1Data. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"../AdaptiveSampling_main.c", line 1002: remark #1538-D: (ULP 10.1) ISR USCI_A1_ISR calls function SendUCA1Data. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"../AdaptiveSampling_main.c", line 1010: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../AdaptiveSampling_main.c", line 360: remark #1535-D: (ULP 8.1) variable "display_com_mask" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+Finished building: "../AdaptiveSampling_main.c"
+ 
+Building target: "AdaptiveSampling.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1120/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR2433__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"AdaptiveSampling.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1120/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1120/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1120/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1120/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="AdaptiveSampling_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "AdaptiveSampling.out" "./AdaptiveSampling_main.obj" "./sensirion_common.obj" "./sensirion_i2c.obj" "./sensirion_i2c_hal.obj" "./stc3x_i2c.obj" "../lnk_msp430fr2433.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "AdaptiveSampling.out"
+ 
+
+**** Build Finished ****
